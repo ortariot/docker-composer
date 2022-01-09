@@ -18,3 +18,33 @@
 Для проверки работоспособности сревера реализована загрузка вебстраницы с сообщением "Stock logistic!!!"
 
 Для проверки работсопосбности REST API можно использовать команды из [requests-examples.http](stocks_products/requests-examples.http)
+
+
+## Развёртывание проекта
+
+Для развёртывания могут потребоваться sudo права. Команды следует выполнять в корневом каталоге проекта.
+
+
+* сборка:
+
+```bash
+ docker-compose build
+```
+
+* запук:
+
+```bash:
+ docker-compose up -d
+```
+
+* применение миграций  
+
+```bash:
+ docker-compose exec web python manage.py migrate --noinput
+```
+
+* остановка сервера и удаление контейнеров:
+
+```bash:
+docker-compose down -v
+```
