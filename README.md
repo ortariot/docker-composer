@@ -15,4 +15,6 @@
 * [Docer-compose файл](\docker-compose.yml) в корне проекта
 
 
+Для проверки работоспособности сревера реализована загрузка вебстраницы с сообщением "Stock logistic!!!"
 
+Для проверки работсопосбности REST API можно использовать команды из [requests-examples.http](stocks_products/requests-examples.http)
