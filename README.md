@@ -11,7 +11,8 @@
 * [Docerfile](/stocks_products/Dockerfile) для `django` в директории stocks_products
 * [Docerfile](/nginx/Dockerfile) для `nginx` в директории nginx
 * [Конфигурация](/nginx/nginx.conf) для `nginx` в директории nginx
-* Права доступа для базы данных следует указать в файле переменнйо окружения [.env.dev](/.env.dev)
+* Настройки для базы данных следует указать в файле переменых окружения [.env.db](/.env.db)
+* Права доступа для django следует указать в файле переменных окружения [.env.dev](/.env.dev)
 * [Docer-compose файл](\docker-compose.yml) в корне проекта
 
 
