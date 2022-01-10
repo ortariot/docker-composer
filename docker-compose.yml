@@ -6,6 +6,8 @@ services:
     command: gunicorn stocks_products.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - ./app/:/usr/src/app/
+    env_file:
+      ./.env.dev
     expose:
       - 8000
     depends_on:
@@ -15,7 +17,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
-      ./.env.dev
+      ./.env.db
   nginx:
     build: ./nginx
     ports:
